@@ -116,29 +116,69 @@ var listItem = document.querySelector("#items");
 // console.log(listItem.lastElementChild);
 // listItem.lastElementChild.innerText = "text";
 // NExt sibiling
-var nextItem = document.querySelector(".title");
-// console.log(nextItem.nextSibling.nextSibling.nextSibling.nextSibling);
-// console.log(nextItem.nextElementSibling);
+// var nextItem = document.querySelector(".title");
+// // console.log(nextItem.nextSibling.nextSibling.nextSibling.nextSibling);
+// // console.log(nextItem.nextElementSibling);
 
-// console.log(listItem.previousSibling.previousSibling);
-// console.log(listItem.previousElementSibling.previousElementSibling);
-// Creating element
-var newDiv = document.createElement("div");
+// // console.log(listItem.previousSibling.previousSibling);
+// // console.log(listItem.previousElementSibling.previousElementSibling);
+// // Creating element
+// var newDiv = document.createElement("div");
 
-newDiv.className = "sourav";
+// newDiv.className = "sourav";
 
-newDiv.id = "majumder";
+// newDiv.id = "majumder";
 
-//Add atributes
-newDiv.setAttribute("style", "color:red;font-size:40px;");
-//add child in div
-var childText = document.createTextNode("hello world");
-//append
-newDiv.appendChild(childText);
-console.log(newDiv);
-// Add newdiv into dom
+// //Add atributes
+// newDiv.setAttribute("style", "color:red;font-size:40px;");
+// //add child in div
+// var childText = document.createTextNode("hello world");
+// //append
+// newDiv.appendChild(childText);
+// console.log(newDiv);
+// // Add newdiv into dom
 
-var container = document.querySelector("header .container");
-var header = document.querySelector(".container h1");
+// var container = document.querySelector("header .container");
+// var header = document.querySelector(".container h1");
 
-container.insertBefore(newDiv, header);
+// container.insertBefore(newDiv, header);
+
+//......Event......//
+
+//One way
+// var button = document
+//   .getElementById("button")
+//   .addEventListener("click", function () {
+//     console.log(123);
+//   });
+
+//Another way
+// var button = document
+//   .getElementById("button")
+//   .addEventListener("click", buttonFunction);
+
+// function buttonFunction(e) {
+//   //   console.log("sourav clicks");
+//   //   document.getElementById("header-title").textContent = "It has changed";
+//   //   document.querySelector("#main").style.backgroundColor = "#f4f4f4";
+//   //   console.log(e);
+//   //   console.log(e.target);
+//   //   console.log(e.target.id);
+//   //   console.log(e.target.className);
+//   //   console.log(e.target.classList[1]);
+//   //   var output = document.getElementById("output");
+//   //   output.innerHTML = "<li >And a fifth one</li>";
+//   //   output.style.listStyleType = "none";
+//   //   output.style.border = "1px solid #f5f5f5";
+//   //   output.style.padding = "8px 12px";
+//   // Window theke mapa hoy
+//   //   console.log(e.clientX);
+//   //   console.log(e.clientY);
+//   // Box theke mapa hoy
+//   //   console.log(e.offsetX);
+//   //   console.log(e.offsetY);
+//   // press one key and click
+//   console.log(e.altKey);
+//   console.log(e.ctrlKey);
+//   console.log(e.shiftKey);
+// }
